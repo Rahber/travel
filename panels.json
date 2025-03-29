@@ -1,0 +1,59 @@
+{
+    "panels": [
+        {
+            "category": "Flight",
+            "categoryId": 1,
+            "title": "Flight Details",
+            "fields": [
+                {"name": "airline", "label": "Airline", "type": "text"},
+                {"name": "flight_number", "label": "Flight Number", "type": "text"},
+                {"name": "departure_station", "label": "Departure Airport", "type": "text"},
+                {"name": "arrival_station", "label": "Arrival Airport", "type": "text"},
+                {"name": "departure_time", "label": "Departure Time", "type": "datetime2"},
+                {"name": "arrival_time", "label": "Arrival Time", "type": "datetime2"},
+                {"name": "booking_reference", "label": "Booking Reference", "type": "text"},
+                {"name": "booking_date", "label": "Booking Date", "type": "date"}
+            ]
+        },
+        {
+            "category": "Bus",
+            "categoryId": 2, 
+            "title": "Bus Details",
+            "fields": [
+                {"name": "bus_number", "label": "Bus Number", "type": "text"},
+                {"name": "departure_station", "label": "Departure Station", "type": "text"},
+                {"name": "arrival_station", "label": "Arrival Station", "type": "text"},
+                {"name": "route", "label": "Route", "type": "text"},
+                {"name": "duration", "label": "Duration", "type": "text"},
+                {"name": "booking_reference", "label": "Booking Reference", "type": "text"},
+                {"name": "booking_date", "label": "Booking Date", "type": "date"}
+            ]
+        },
+        {
+            "category": "Train",
+            "categoryId": 3,
+            "title": "Train Details", 
+            "fields": [
+                {"name": "train_number", "label": "Train Number", "type": "text"},
+                {"name": "departure_station", "label": "Departure Station", "type": "text"},
+                {"name": "arrival_station", "label": "Arrival Station", "type": "text"},
+                {"name": "booking_reference", "label": "Booking Reference", "type": "text"},
+                {"name": "booking_date", "label": "Booking Date", "type": "date"}
+            ]
+        },
+        {
+            "category": "Hotel",
+            "categoryId": 4,
+            "title": "Hotel Details",
+            "fields": [
+                {"name": "hotel_name", "label": "Hotel Name", "type": "text"},
+                {"name": "room_type", "label": "Room Type", "type": "text"},
+                {"name": "check_in", "label": "Check-in Date", "type": "date"},
+                {"name": "check_out", "label": "Check-out Date", "type": "date"},
+                {"name": "amenities", "label": "Amenities", "type": "text"},
+                {"name": "booking_reference", "label": "Booking Reference", "type": "text"},
+                {"name": "booking_date", "label": "Booking Date", "type": "date"}
+            ]
+        }
+    ]
+}

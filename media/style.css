@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    background-color: #000;
+    color: #fff;
+    padding: 0;
+    transition: all 0.3s ease;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #1e2125;
+    background-color: #434f5a !important;
+}
+
+.navbar-nav li {
+    margin: 0 5px;
+}
+
+.site-header.scrolled {
+    padding: 0;
+}
+
+.site-header.scrolled .header-content {
+    display: none;
+}
+
+.logo {
+    height: 40px;
+}
+
+.header-logo {
+    height: 80px;
+}
+
+.nav-menu {
+    background-color: #212529;
+}
+
+.main-content {
+    margin-top: 150px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+@media (min-width: 992px) {
+    .header-content .container {
+        justify-content: flex-start !important;
+    }
+
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #212529;
+        padding: 1rem;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .ms-auto {
+        margin-left: 0 !important;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+
+    .dropdown-menu {
+        border: none;
+        padding-left: 1rem;
+        background-color: transparent;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+        padding-left: 2rem;
+    }
+
+    .dropdown-item {
+        color: rgba(255, 255, 255, 0.55) !important;
+    }
+
+    .dropdown-item:hover {
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.75) !important;
+    }
+
+    .dropdown-menu.show {
+        display: block !important;
+    }
+}
+
+
+/* Login Form Styles */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+.forgot-password a {
+    color: #666;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: auto;
+    background-color: #000;
+    color: white;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Form Control Styles */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Card Styles */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+/* Trip slider styles */
+.trip-container {
+    position: relative;
+    padding: 10px;
+}
+
+.trip-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.trip-card {
+    flex: 0 0 auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
